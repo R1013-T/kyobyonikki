@@ -3,7 +3,7 @@ import Image from 'next/image'
 import StartButton from './_components/common/button/start-button'
 import TopHeader from './_components/common/header/top-header'
 
-export default function Home() {
+export default function Top() {
   return (
     <div className="h-full overflow-y-auto text-center bg-brand-2/60 p-4">
       <TopHeader />
