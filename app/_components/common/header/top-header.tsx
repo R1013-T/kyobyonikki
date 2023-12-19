@@ -1,12 +1,16 @@
 import Image from 'next/image'
 
-import { Button } from '../../ui/button'
+import StartButton from '../button/start-button'
 
 export default function TopHeader() {
   return (
-    <header className="p-2 flex justify-center">
-      <Image src="/images/logo.png" width={200} height={56} alt="共病日記" />
-      <Button>aaaaaa</Button>
+    <header className="fixed top-0 right-0 w-full py-2 px-4 flex justify-center lg:justify-between items-center bg-background/30 backdrop-blur-sm">
+      <h1>
+        <Image src="/images/logo.png" width={150} height={42} alt="共病日記" />
+      </h1>
+      <div className="hidden lg:block">
+        <StartButton />
+      </div>
     </header>
   )
 }

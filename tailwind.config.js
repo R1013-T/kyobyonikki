@@ -27,6 +27,12 @@ module.exports = {
         'white-3': '#EDEDED',
         background: '#F8FAFC',
       },
+      height: {
+        dvh: '100dvh',
+      },
+      borderColor: {
+        'border-1': '#EDEDED',
+      },
       keyframes: {
         'accordion-down': {
           from: { height: 0 },
