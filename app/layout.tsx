@@ -54,7 +54,11 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={LINESeedJP.className}>{children}</body>
+      <body
+        className={`${LINESeedJP.className} bg-background text-black-2 font-bold h-dvh overflow-hidden`}
+      >
+        {children}
+      </body>
     </html>
   )
 }
