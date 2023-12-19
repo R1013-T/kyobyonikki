@@ -9,7 +9,7 @@ export default function MainLayout({
   return (
     <main className="h-dvh overflow-y-auto lg:flex">
       <Nav />
-      {children}
+      <div className="p-2">{children}</div>
     </main>
   )
 }
