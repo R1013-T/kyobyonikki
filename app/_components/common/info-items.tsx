@@ -9,7 +9,6 @@ import { usePathname } from 'next/navigation'
 
 import UserInfo from './user-info'
 
-
 export default function InfoItems() {
   const pathname = usePathname()
 
@@ -31,7 +30,7 @@ export default function InfoItems() {
         onClick={() => {
           alert('ログアウト')
         }}
-        className="flex gap-1.5 items-center py-1.5 pl-2 pr-4 rounded-md whitespace-nowrap hover:bg-brand-1/20"
+        className="flex gap-1.5 w-full items-center py-1.5 pl-2 pr-4 rounded-md whitespace-nowrap hover:bg-brand-1/20"
       >
         <ArrowLeftEndOnRectangleIcon className="w-7 h-7" />
         <p className="mt-0.5">ログアウト</p>
