@@ -27,9 +27,9 @@ export const metadata: Metadata = {
       '共病日記は、持病のある方々のためのオンラインコミュニティです。日々の健康状態を記録し、日記や悩みを共有することで、支援と理解のある環境を提供します。',
     images: [
       {
-        url: 'https://www.ryu-tech.tokyo/_next/image?url=/images/icon.png&w=256&q=75',
-        width: 256,
-        height: 256,
+        url: 'https://raw.githubusercontent.com/R1013-T/kyobyonikki/main/public/images/logo.png',
+        width: 1138,
+        height: 320,
         alt: '共病日記',
       },
     ],
@@ -42,7 +42,7 @@ export const metadata: Metadata = {
     site: '@rtjob2023',
     creator: '@rtjob2023',
     images: [
-      'https://www.ryu-tech.tokyo/_next/image?url=/images/icon.png&w=256&q=75',
+      'https://raw.githubusercontent.com/R1013-T/kyobyonikki/main/public/images/logo.png',
     ],
   },
 }
