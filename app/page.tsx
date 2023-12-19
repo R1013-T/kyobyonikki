@@ -1,7 +1,7 @@
 import Image from 'next/image'
 
-import StartButton from './_components/common/button/start-button'
 import TopHeader from './_components/common/header/top-header'
+import StartButton from './_components/common/start-button'
 
 export default function Top() {
   return (

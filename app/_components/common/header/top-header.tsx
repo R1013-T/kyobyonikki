@@ -1,6 +1,6 @@
 import Image from 'next/image'
 
-import StartButton from '../button/start-button'
+import StartButton from '../start-button'
 
 export default function TopHeader() {
   return (
