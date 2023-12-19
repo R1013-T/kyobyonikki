@@ -6,13 +6,14 @@ import { usePathname } from 'next/navigation'
 
 const links = [
   {
+    href: '/main/private',
+    name: 'ホーム',
+    Icon: HomeIcon,
+  },
+  {
     href: '/main/public/diary',
     name: 'みんなの日記',
     Icon: UserGroupIcon,
-  },
-  {
-    href: '/main/private',
-    Icon: HomeIcon,
   },
   {
     href: '/main/public/worry',
@@ -27,7 +28,7 @@ const NavItem = ({
   Icon,
 }: {
   href: string
-  name?: string
+  name: string
   Icon: any
 }) => {
   const pathname = usePathname()
@@ -42,13 +43,12 @@ const NavItem = ({
   return (
     <Link
       href={href}
-      className={`rounded-full ${
-        name ? 'h-8 flex w-[54px] flex-col justify-center items-center' : ''
-      } ${isCurrent && 'text-brand-1'}
-          }`}
+      className={`flex gap-1.5 items-center py-1.5 pl-2 pr-4 rounded-md whitespace-nowrap ${
+        isCurrent && 'bg-brand-1 text-white-1'
+      }`}
     >
-      <Icon className={`${name ? 'w-6 h-7' : 'w-8 h-8'}`} />
-      {name && <p className="text-[8px] font-normal">{name}</p>}
+      <Icon className="w-7 h-7" />
+      <p className="mt-0.5">{name}</p>
     </Link>
   )
 }

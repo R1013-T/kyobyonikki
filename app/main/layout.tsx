@@ -1,3 +1,4 @@
+import Nav from '../_components/common/nav'
 import MobileNav from '../_components/common/nav/mobile'
 
 export default function MainLayout({
@@ -6,11 +7,9 @@ export default function MainLayout({
   children: React.ReactNode
 }) {
   return (
-    <main className="h-full overflow-y-auto">
+    <main className="h-dvh overflow-y-auto lg:flex">
+      <Nav />
       {children}
-      <div className="">
-        <MobileNav />
-      </div>
     </main>
   )
 }
