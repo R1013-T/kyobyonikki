@@ -1,7 +1,6 @@
 import HamburgerMenu from '../_components/common/hamburger'
 import MainHeader from '../_components/common/header/main-header'
 import Nav from '../_components/common/nav'
-import MobileNav from '../_components/common/nav/mobile'
 
 export default function MainLayout({
   children,
@@ -12,11 +11,11 @@ export default function MainLayout({
     <main className="h-dvh overflow-y-auto lg:flex">
       <Nav />
       <HamburgerMenu />
-      <div className="p-2 pt-0 lg:pt-2 h-full w-full">
+      <div className="px-3 h-full w-full">
         <div className="lg:hidden">
           <MainHeader />
         </div>
-        {children}
+        <article className="h-full w-full pt-3 max-w-xl mx-auto lg:max-w-none">{children}</article>
       </div>
     </main>
   )

@@ -34,17 +34,6 @@ export const metadata: Metadata = {
       },
     ],
   },
-  twitter: {
-    card: 'summary_large_image',
-    title: '共病日記',
-    description:
-      '共病日記は、持病のある方々のためのオンラインコミュニティです。日々の健康状態を記録し、日記や悩みを共有することで、支援と理解のある環境を提供します。',
-    site: '@rtjob2023',
-    creator: '@rtjob2023',
-    images: [
-      'https://raw.githubusercontent.com/R1013-T/kyobyonikki/main/public/images/logo.png',
-    ],
-  },
 }
 
 export default function RootLayout({

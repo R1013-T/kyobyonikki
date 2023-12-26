@@ -40,14 +40,14 @@ const NavItem = ({
       isCurrent = false
     }
   } else {
-    isCurrent = href.split('/')[3] === pathname.split('/')[3]
+    isCurrent = href.split('/')[3] === pathname.split('/')[3] && pathname.split('/')[2] === 'public'
   }
 
   return (
     <Link
       href={href}
       className={`flex gap-1.5 items-center py-1.5 pl-2 pr-4 rounded-md whitespace-nowrap ${
-        isCurrent ? 'bg-brand-1 text-white-1' : 'hover:bg-brand-1/20'
+        isCurrent ? 'bg-brand-1 text-white-1' : 'hover:bg-brand-1/40'
       }`}
     >
       <Icon className="w-7 h-7" />
