@@ -40,7 +40,9 @@ const NavItem = ({
       isCurrent = false
     }
   } else {
-    isCurrent = href.split('/')[3] === pathname.split('/')[3] && pathname.split('/')[2] === 'public'
+    isCurrent =
+      href.split('/')[3] === pathname.split('/')[3] &&
+      pathname.split('/')[2] === 'public'
   }
 
   return (

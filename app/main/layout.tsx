@@ -15,7 +15,9 @@ export default function MainLayout({
         <div className="lg:hidden">
           <MainHeader />
         </div>
-        <article className="h-full w-full pt-3 max-w-xl mx-auto lg:max-w-none">{children}</article>
+        <article className="h-full w-full pt-3 max-w-xl mx-auto lg:max-w-none">
+          {children}
+        </article>
       </div>
     </main>
   )

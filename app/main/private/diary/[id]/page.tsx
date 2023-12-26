@@ -1,5 +1,5 @@
-import React from "react";
+import React from 'react'
 
 export default function DiaryDetailPage() {
-  return <div>DiaryDetailPage</div>;
+  return <div>DiaryDetailPage</div>
 }
