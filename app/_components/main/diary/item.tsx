@@ -30,7 +30,7 @@ export default function DiaryItem({
         href={`/main/private/diary?id=${id}`}
         className={`border bg-white-1 p-1 px-2 rounded-md flex flex-nowrap justify-between items-center transition-all ${
           id === paramsId
-            ? 'border-brand-1/70 bg-brand-1/10'
+            ? 'border-brand-1/70 bg-brand-1/20'
             : 'hover:bg-white-3'
         }`}
       >

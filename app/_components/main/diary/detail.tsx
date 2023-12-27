@@ -1,6 +1,7 @@
 'use client'
 
 import { ArrowsPointingOutIcon } from '@heroicons/react/24/outline'
+import Image from 'next/image'
 import Link from 'next/link'
 import { usePathname, useRouter, useSearchParams } from 'next/navigation'
 import { useEffect } from 'react'
@@ -50,6 +51,16 @@ export default function DiaryDetail({
             </Button>
           </div>
         )}
+        <div className="absolute top-11 left-6 flex gap-3 justify-center mt-4 text-xs">
+          <div className="flex flex-col items-center">
+            <p>体調</p>
+            <Image src="/images/faces/4.svg" width={30} height={30} alt="" />
+          </div>
+          <div className="flex flex-col items-center">
+            <p>メンタル</p>
+            <Image src="/images/faces/3.svg" width={30} height={30} alt="" />
+          </div>
+        </div>
         <div className="bg-white-1 rounded-md border py-3 px-4 text-center">
           <p className="text-8xl mt-5">😀</p>
           <p className="mt-4 text-xl">今日は楽しかった</p>
