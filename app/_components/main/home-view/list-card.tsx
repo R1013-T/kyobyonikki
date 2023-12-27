@@ -3,16 +3,18 @@ import Link from 'next/link'
 
 import { Button } from '@/app/_components/ui/button'
 
-import Title from '../../section-title'
+import Title from '../section-title'
 
 export default function ListCard({
   children,
   title,
   name,
+  linkHidden,
 }: {
   children: React.ReactNode
   title: string
   name: string
+  linkHidden?: boolean
 }) {
   return (
     <section className="w-full h-full pt-2 lg:pb-32 relative">
@@ -27,16 +29,18 @@ export default function ListCard({
         <PencilIcon className="w-5 h-5" />
         <p>{title}を書く</p>
       </Link>
-      <div className="text-center mt-1">
-        <Button variant="link">
-          <Link
-            href={`/main/private/${name}`}
-            className="flex justify-center items-center"
-          >
-            すべての{title}を見る <ChevronRightIcon className="w-5 h-5" />
-          </Link>
-        </Button>
-      </div>
+      {!linkHidden && (
+        <div className="text-center mt-1">
+          <Button variant="link">
+            <Link
+              href={`/main/private/${name}`}
+              className="flex justify-center items-center"
+            >
+              すべての{title}を見る <ChevronRightIcon className="w-5 h-5" />
+            </Link>
+          </Button>
+        </div>
+      )}
     </section>
   )
 }

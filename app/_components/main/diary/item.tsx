@@ -22,7 +22,7 @@ export default function DiaryItem({
       <p className="text-xs  ml-1 font-normal">{date}</p>
       <Link
         href={`/main/private/diary/${id}`}
-        className="border bg-white-1 p-1 px-2 rounded-md flex flex-nowrap justify-between items-center"
+        className="border bg-white-1 p-1 px-2 rounded-md flex flex-nowrap justify-between items-center transition-all hover:bg-white-3"
       >
         <div className="flex items-center mx-2 pt-2 pb-1">
           <p className="text-4xl">{emoji}</p>

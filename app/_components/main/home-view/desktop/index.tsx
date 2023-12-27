@@ -1,7 +1,6 @@
 import ConditionAllList from '../../condition/all-list'
-import ConditionList from '../../condition/list'
 import DiaryAllList from '../../diary/all-list'
-import ListCard from './list-card'
+import ListCard from '../list-card'
 
 export default function DesktopHomeView() {
   return (

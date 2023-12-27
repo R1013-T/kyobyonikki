@@ -8,17 +8,13 @@ export default function MainLayout({
   children: React.ReactNode
 }) {
   return (
-    <main className="h-dvh overflow-y-auto lg:flex">
+    <main className="h-dvh overflow-y-auto lg:flex lg:overflow-hidden relative">
       <Nav />
       <HamburgerMenu />
-      <div className="px-3 h-full w-full">
-        <div className="lg:hidden">
-          <MainHeader />
-        </div>
-        <article className="h-full w-full pt-3 max-w-xl mx-auto lg:max-w-none">
-          {children}
-        </article>
-      </div>
+      <MainHeader />
+      <article className="h-full w-full mt-10 px-3 lg:mt-0 pt-3 max-w-xl mx-auto lg:max-w-none">
+        {children}
+      </article>
     </main>
   )
 }
