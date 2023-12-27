@@ -8,7 +8,7 @@ export default function MainLayout({
   children: React.ReactNode
 }) {
   return (
-    <main className="h-dvh overflow-y-auto lg:flex lg:overflow-hidden relative">
+    <main className="h-dvh lg:flex overflow-hidden relative">
       <Nav />
       <HamburgerMenu />
       <MainHeader />

@@ -36,7 +36,9 @@ const NavItem = ({
   if (href === '/main/private' && pathname.split('/')[2] === 'private') {
     isCurrent = true
   } else {
-    isCurrent = href.split('/')[3] === pathname.split('/')[3]
+    isCurrent =
+      href.split('/')[3] === pathname.split('/')[3] &&
+      pathname.split('/')[2] === 'public'
   }
 
   return (

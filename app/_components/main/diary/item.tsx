@@ -1,5 +1,8 @@
+'use client'
+
 import Image from 'next/image'
 import Link from 'next/link'
+import { useSearchParams } from 'next/navigation'
 import React from 'react'
 
 export default function DiaryItem({
@@ -17,12 +20,19 @@ export default function DiaryItem({
   condition: number
   mental: number
 }) {
+  const searchParams = useSearchParams()
+  const paramsId = searchParams.get('id')
+
   return (
     <div>
       <p className="text-xs  ml-1 font-normal">{date}</p>
       <Link
-        href={`/main/private/diary/${id}`}
-        className="border bg-white-1 p-1 px-2 rounded-md flex flex-nowrap justify-between items-center transition-all hover:bg-white-3"
+        href={`/main/private/diary?id=${id}`}
+        className={`border bg-white-1 p-1 px-2 rounded-md flex flex-nowrap justify-between items-center transition-all ${
+          id === paramsId
+            ? 'border-brand-1/70 bg-brand-1/10'
+            : 'hover:bg-white-3'
+        }`}
       >
         <div className="flex items-center mx-2 pt-2 pb-1">
           <p className="text-4xl">{emoji}</p>

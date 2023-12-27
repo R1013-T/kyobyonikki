@@ -28,7 +28,7 @@ export default function DiaryAllList() {
         mental={4}
       />
       <DiaryItem
-        id="1"
+        id="4"
         date="2021/08/01"
         emoji="😀"
         title="今日は楽しかった"
@@ -36,7 +36,7 @@ export default function DiaryAllList() {
         mental={3}
       />
       <DiaryItem
-        id="2"
+        id="5"
         date="2021/08/02"
         emoji="🎉"
         title="誕生日会をした"
@@ -44,7 +44,7 @@ export default function DiaryAllList() {
         mental={5}
       />
       <DiaryItem
-        id="3"
+        id="6"
         date="2021/08/03"
         emoji="🏃"
         title="ランニングで疲れた"
@@ -52,7 +52,7 @@ export default function DiaryAllList() {
         mental={4}
       />
       <DiaryItem
-        id="1"
+        id="7"
         date="2021/08/01"
         emoji="😀"
         title="今日は楽しかった"
@@ -60,7 +60,7 @@ export default function DiaryAllList() {
         mental={3}
       />
       <DiaryItem
-        id="2"
+        id="8"
         date="2021/08/02"
         emoji="🎉"
         title="誕生日会をした"
@@ -68,7 +68,7 @@ export default function DiaryAllList() {
         mental={5}
       />
       <DiaryItem
-        id="3"
+        id="9"
         date="2021/08/03"
         emoji="🏃"
         title="ランニングで疲れた"
@@ -76,7 +76,7 @@ export default function DiaryAllList() {
         mental={4}
       />
       <DiaryItem
-        id="1"
+        id="10"
         date="2021/08/01"
         emoji="😀"
         title="今日は楽しかった"
@@ -84,7 +84,7 @@ export default function DiaryAllList() {
         mental={3}
       />
       <DiaryItem
-        id="2"
+        id="11"
         date="2021/08/02"
         emoji="🎉"
         title="誕生日会をした"
@@ -92,7 +92,7 @@ export default function DiaryAllList() {
         mental={5}
       />
       <DiaryItem
-        id="3"
+        id="12"
         date="2021/08/03"
         emoji="🏃"
         title="ランニングで疲れた"

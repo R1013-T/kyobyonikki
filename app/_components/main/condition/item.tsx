@@ -17,7 +17,10 @@ export default function ConditionItem({
   return (
     <div>
       <p className="font-normal ml-0.5 mt-1">{name}</p>
-      <Link href={`/main/private/condition/${id}`} className="cursor-pointer">
+      <Link
+        href={`/main/private/condition?id=${id}`}
+        className="cursor-pointer"
+      >
         <AreaChart
           className="h-56 text-brand-1 bg-white-1 border rounded-md p-2 transition-all hover:bg-white-3 cursor-pointer"
           data={chartData}
