@@ -1,11 +1,16 @@
 import ConditionList from '../../condition/list'
-import DiaryList from '../../diary/list'
+import DiaryAllList from '../../diary/all-list'
+import ListCard from './list-card'
 
 export default function DesktopHomeView() {
   return (
     <div className="hidden lg:flex gap-3 h-full">
-      <DiaryList />
-      <ConditionList />
+      <ListCard title="日記" name="diary">
+        <DiaryAllList />
+      </ListCard>
+      <ListCard title="記録" name="condition">
+        <DiaryAllList />
+      </ListCard>
     </div>
   )
 }
