@@ -17,7 +17,7 @@ export default function ListCard({
   return (
     <section className="w-full h-full pt-2 lg:pb-32 relative">
       <Title name={title} />
-      <div className="border h-full mt-1 p-2 flex flex-col gap-1 rounded-md bg-white-2 overflow-y-auto">
+      <div className="border h-full mt-1 p-2 flex flex-col gap-3 rounded-md bg-white-2 overflow-y-auto">
         {children}
       </div>
       <Link

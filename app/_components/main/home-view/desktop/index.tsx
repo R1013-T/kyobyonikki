@@ -1,3 +1,4 @@
+import ConditionAllList from '../../condition/all-list'
 import ConditionList from '../../condition/list'
 import DiaryAllList from '../../diary/all-list'
 import ListCard from './list-card'
@@ -9,7 +10,7 @@ export default function DesktopHomeView() {
         <DiaryAllList />
       </ListCard>
       <ListCard title="記録" name="condition">
-        <DiaryAllList />
+        <ConditionAllList />
       </ListCard>
     </div>
   )

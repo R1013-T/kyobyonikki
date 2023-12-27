@@ -32,7 +32,7 @@ module.exports = {
         background: '#F8FAFC',
         tremor: {
           brand: {
-            faint: colors.blue[50],
+            faint: '#69E0B3',
             muted: colors.blue[200],
             subtle: colors.blue[400],
             DEFAULT: colors.blue[500],
