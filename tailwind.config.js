@@ -80,6 +80,7 @@ module.exports = {
       },
       height: {
         dvh: '100dvh',
+        homeMobile: 'calc(100vh - 6rem)',
       },
       borderColor: {
         'border-1': '#EDEDED',

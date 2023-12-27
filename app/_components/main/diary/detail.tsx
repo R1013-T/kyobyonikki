@@ -21,7 +21,6 @@ export default function DiaryDetail({
   const id = searchParams.get('id')
 
   useEffect(() => {
-    console.log('pathname', pathname)
     if (id && window.innerWidth < 1024 && pathname === '/main/private/diary') {
       router.push(`/main/private/diary/${id}`)
     }
