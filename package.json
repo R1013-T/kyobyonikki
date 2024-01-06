@@ -12,8 +12,7 @@
     "format": "run-s format:prettier format:eslint",
     "format:eslint": "bun lint:eslint --fix",
     "format:prettier": "bun lint:prettier --write",
-    "typecheck": "tsc",
-    "seed": "node -r dotenv/config ./scripts/seed.js"
+    "typecheck": "tsc"
   },
   "dependencies": {
     "@heroicons/react": "^2.1.1",
