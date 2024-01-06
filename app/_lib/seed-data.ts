@@ -29,6 +29,7 @@ const diary = [
     condition: 3,
     mental: 4,
     date: '2024年1月1日',
+    is_public: false,
     user_id: '6019e954-f7c8-4025-b7b7-8eb7f8a0f1d5',
   },
   {
@@ -39,6 +40,7 @@ const diary = [
     condition: 1,
     mental: 2,
     date: '2024年1月2日',
+    is_public: false,
     user_id: '6019e954-f7c8-4025-b7b7-8eb7f8a0f1d5',
   },
   {
@@ -50,6 +52,7 @@ const diary = [
     condition: 5,
     mental: 3,
     date: '2024年1月3日',
+    is_public: true,
     user_id: '6019e954-f7c8-4025-b7b7-8eb7f8a0f1d5',
   },
 ]

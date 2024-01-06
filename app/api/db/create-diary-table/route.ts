@@ -13,6 +13,7 @@ export async function GET(request: Request) {
         condition INT NOT NULL,
         mental INT NOT NULL,
         date TEXT NOT NULL,
+        is_public BOOLEAN NOT NULL DEFAULT FALSE,
         user_id UUID NOT NULL
       );
     `
