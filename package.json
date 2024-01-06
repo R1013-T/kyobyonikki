@@ -12,7 +12,8 @@
     "format": "run-s format:prettier format:eslint",
     "format:eslint": "bun lint:eslint --fix",
     "format:prettier": "bun lint:prettier --write",
-    "typecheck": "tsc"
+    "typecheck": "tsc",
+    "seed": "node -r dotenv/config ./scripts/seed.js"
   },
   "dependencies": {
     "@heroicons/react": "^2.1.1",
@@ -42,6 +43,7 @@
     "@types/react-dom": "^18",
     "@typescript-eslint/eslint-plugin": "^6.15.0",
     "autoprefixer": "^10.0.1",
+    "dotenv": "^16.3.1",
     "eslint": "^8",
     "eslint-config-next": "14.0.4",
     "eslint-config-prettier": "^9.1.0",
