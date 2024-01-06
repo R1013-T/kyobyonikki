@@ -10,7 +10,7 @@ export default function UserInfo() {
     >
       <div className="flex justify-center">
         <Avatar>
-          <AvatarImage src="https://github.com/shadcn.png" />
+          <AvatarImage src="https://github.com/R1013-T.png" />
         </Avatar>
       </div>
       <p className="text-center mt-1.5 text-sm">山田 太郎</p>
