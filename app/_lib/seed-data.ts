@@ -3,18 +3,21 @@ const users = [
     id: '410544b2-4001-4271-9855-fec4b6a6442a',
     name: '山田 太郎',
     email: 'tarou@gmail.com',
+    password: '$2b$10$S8VjPysfLYvRq4oNjnfi3.WypP5MOWaCCZDDSKlcU2J4/CG5c5EZ2',
     image: 'https://github.com/R1013-T.png',
   },
   {
     id: 'c4b6a6442a-410544b2-4001-4271-9855-fe',
     name: '田中 次郎',
     email: 'jirou@gmail.com',
+    password: '$2b$10$S8VjPysfLYvRq4oNjnfi3.WypP5MOWaCCZDDSKlcU2J4/CG5c5EZ2',
     image: 'https://github.com/R1013-T.png',
   },
   {
     id: '4271-9855-fe410544b2-4001-c4b6a6442a',
     name: '佐藤 三郎',
     email: 'saburou@gmail.com',
+    password: '$2b$10$S8VjPysfLYvRq4oNjnfi3.WypP5MOWaCCZDDSKlcU2J4/CG5c5EZ2',
     image: 'https://github.com/R1013-T.png',
   },
 ]

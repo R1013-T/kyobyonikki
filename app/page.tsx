@@ -1,5 +1,3 @@
-import Image from 'next/image'
-
 import TopHeader from './_components/common/header/top-header'
 import StartButton from './_components/common/start-button'
 

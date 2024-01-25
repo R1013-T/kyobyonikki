@@ -28,7 +28,7 @@ export default function DiaryItem({
       <p className="text-xs  ml-1 font-normal">{date}</p>
       <Link
         href={`/main/private/diary?id=${id}`}
-        className={`border bg-white-1 p-1 px-2 rounded-md flex flex-nowrap justify-between items-center transition-all ${
+        className={`border-2 bg-white-1 p-1 px-2 rounded-md flex flex-nowrap justify-between items-center transition-all ${
           id === paramsId
             ? 'border-brand-1/70 bg-brand-1/20'
             : 'hover:bg-white-3'

@@ -11,8 +11,8 @@ async function seedUsers(client) {
     const insertedUsers = await Promise.all(
       users.map(async (user) => {
         return client.sql`
-          INSERT INTO users (name, email, image)
-          VALUES (${user.name}, ${user.email}, ${user.image})
+          INSERT INTO users (name, email, password, image)
+          VALUES (${user.name}, ${user.email}, ${user.password}, ${user.image})
           ON CONFLICT (id) DO NOTHING;
         `
       }),
@@ -85,8 +85,8 @@ async function seedRecordContent(client) {
 async function main() {
   const client = await db.connect()
 
-  // await seedUsers(client)
-  await seedDiary(client)
+  await seedUsers(client)
+  // await seedDiary(client)
   // await seedRecordGroup(client)
   // await seedRecordContent(client)
 

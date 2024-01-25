@@ -22,7 +22,7 @@ export default function ConditionItem({
         className="cursor-pointer"
       >
         <AreaChart
-          className="h-56 text-brand-1 bg-white-1 border rounded-md p-2 transition-all hover:bg-white-3 cursor-pointer"
+          className="h-56 text-[#69E0B3] bg-white-1 border rounded-md p-2 transition-all hover:bg-white-3 cursor-pointer"
           data={chartData}
           index="date"
           categories={['condition']}

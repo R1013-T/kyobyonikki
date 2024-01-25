@@ -61,7 +61,7 @@ export default function DiaryDetail({
             <Image src="/images/faces/3.svg" width={30} height={30} alt="" />
           </div>
         </div>
-        <div className="bg-white-1 rounded-md border py-3 px-4 text-center">
+        <div className="bg-white-1 rounded-md border-2 py-3 px-4 text-center">
           <p className="text-8xl mt-5">😀</p>
           <p className="mt-4 text-xl">今日は楽しかった</p>
           <p className="mt-4 text-left leading-7">
