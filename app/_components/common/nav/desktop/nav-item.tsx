@@ -49,7 +49,7 @@ const NavItem = ({
     <Link
       href={href}
       className={`flex gap-1.5 items-center py-1.5 pl-2 pr-4 rounded-md whitespace-nowrap ${
-        isCurrent ? 'bg-brand-1 text-white-1' : 'hover:bg-brand-1/40'
+        isCurrent ? 'bg-brand-1 text-white-1' : 'hover:bg-white-3'
       }`}
     >
       <Icon className="w-7 h-7" />
