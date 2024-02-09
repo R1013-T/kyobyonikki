@@ -9,7 +9,7 @@ export default function StartButton() {
 
   return (
     <Button
-      className="bg-brand-1 text-lg hover:bg-brand-1 hover:opacity-80"
+      className="bg-brand-1 text-lg font-bold hover:bg-brand-1 hover:opacity-80"
       onClick={() => {
         router.push('/main/private')
       }}
